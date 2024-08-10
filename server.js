@@ -19,9 +19,7 @@ const AdminRouter = require("./Routes/Admin.Routes");
 const MsgRoutes = require("./Routes/Msg.Routes");
 const auctionRoutes = require("./Routes/Auction.Routes");
 app.use(express.json());
-app.use(cors({
-  origin: 'https://strong-longma-616758.netlify.app', // Update this to your frontend domain
-}));
+app.use(cors());
 const path = require("path");
 const dirname = path.resolve();
 
